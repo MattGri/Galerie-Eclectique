@@ -1,0 +1,186 @@
+*{
+	box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	font-family: "Montserrat", sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+    background-color: #000;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.container .navigation{
+    padding: 60px 0px 40px 0px;
+}
+
+.container .navigation .wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.container .navigation .wrapper .text{
+    font-size: 25px;
+    text-decoration: none;
+    color: #fff;
+    margin-right: 30px;
+}
+
+.container .navigation .wrapper .text:hover{
+    border-top: 3px solid #ff1500;
+}
+
+.container .navigation .wrapper .shop{
+    color: #ff1500;
+}
+
+.container .navigation .wrapper .shop:hover{
+    color: #fff;
+}
+
+section .line{
+    width: 100%;
+    background-color: #ff1500;
+    height: 2px;
+    display: block;
+}
+
+.gallery{
+    padding-bottom: 73px;
+}
+
+.gallery .wrapper{
+    display: flex;
+}
+
+.gallery .wrapper .container .line{
+    background-color: #ff1500;
+    display: block;
+    height: 8px;
+    margin: 140px auto 0 auto;
+    width: 386px;
+}
+
+.gallery .wrapper .container .margin{
+    margin: 80px auto 60px auto;
+}
+
+.gallery .wrapper .container .title{
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-top: 90px;
+}
+
+.gallery .wrapper .container .shop{
+    display: block;
+    margin: 0 auto;
+    background-color: #000;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.gallery .wrapper .container .shop:hover{
+    color: #ff1500;
+    transition: 0.5s;
+}
+
+.container .copyright{
+    padding: 11px 0px;
+}
+
+.container .copyright .wrapper{
+    display: flex;
+}
+
+.container .copyright .wrapper .left{
+    width: 50%;
+}
+
+.container .copyright .wrapper .left .text{
+    font-size: 13px;
+    color: #fff;
+    line-height: 25px;
+    margin-bottom: 40px;
+}
+
+.container .copyright .wrapper .left .links{
+    color: #fff;
+    font-size: 13px;
+    cursor: pointer;
+}
+.container .copyright .wrapper .left .first{
+    margin-right: 18px;
+}
+
+.container .copyright .wrapper .right{
+    width: 50%;
+    padding-top: 10px;
+}
+
+.container .copyright .wrapper .right .wrapperBox{
+    display: flex;
+    align-items: center;
+}
+
+.container .copyright .wrapper .right .wrapperBox  .margin{
+    margin: 0px 20px 0px 80px;
+    cursor: pointer;
+}
+
+.container .copyright .wrapper .right .wrapperBox .marg{
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.container .copyright .wrapper .right .wrapperBox .instagram{
+    margin-right: 18px;
+}
