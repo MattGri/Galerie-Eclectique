@@ -207,3 +207,68 @@ section .line{
 .container .copyright .wrapper .right .wrapperBox .instagram{
     margin-right: 18px;
 }
+
+@media(max-width: 1100px){
+    .container{
+        width: 900px;
+    }
+}
+
+@media(max-width: 900px){
+    .container{
+        padding: 0 20px;
+        width: 100%;
+    }
+    .container .navigation{
+        display: none;
+    }
+    section .line{
+        margin-top: 30px;
+    }
+    .get .container form .box .form{
+        margin: 0 auto 30px auto;
+        display: block; 
+    }
+    .get .container form .box select{
+        margin: 0 auto 30px auto;
+        display: block;
+    }
+    .get .container form .box textarea{
+        margin: 0 auto 30px auto;
+        display: block;
+    }
+    .get .container form .box .submit{
+        margin: 0 auto;
+        display: block;
+    }
+    .container .copyright .wrapper{
+        flex-wrap: wrap;
+    }
+    .container .copyright .wrapper .left{
+        width: 100%;
+    }
+    .container .copyright .wrapper .text{
+        text-align: center;
+    }
+    .container .copyright .wrapper .box{
+        text-align: center;
+    }
+    .container .copyright .wrapper .right{
+        margin: 0 auto;
+    }
+    .container .copyright .wrapper .right .wrapperBox{
+        justify-content: center;
+    }
+    .container .copyright .wrapper .right .wrapperBox .box{
+        margin: 0 auto;
+    }
+    .container .copyright .wrapper .right .wrapperBox .instagram{
+        margin-right: 0px;
+    }
+    .container .copyright .wrapper .right .wrapperBox .margin{
+        margin: 0px;
+    }
+    .container .copyright .wrapper .right .wrapperBox .marg{
+        margin: 0px;
+    }
+}
