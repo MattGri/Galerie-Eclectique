@@ -13,33 +13,30 @@
             <li><a href="index.html" class="text">Home</a></li>
             <li><a href="about.html" class="text">About</a></li>
             <li><a href="contact.html" class="text contact">Contact</a></li>
-            <li><a href="donate.html" class="text">Donate</a></li>
-            <li><a href="#" class="text">My Works</a></li>
+            <li><a href="donate.html" class="text">Donate</a>
+            <li><a href="works.html" class="text">My Works</a></li>
             <li><a href="shop.html" class="text">Shop</a></li>
         </ul>
     </nav>
 </div>
-<section>
-    <span class="line"></span>
-</section>
 <main class="get">
     <div class="container">
         <header class="touch">
             <h1 class="title">Get In Touch</h1>
             <span class="line"></span>
         </header>
-        <form action="">
+        <form action="GET">
             <div class="box">
-                <input type="text" required placeholder="First Name" class="form">
+                <input type="text" required name="First name" placeholder="First Name" class="form">
             </div>
             <div class="box">
-                <input type="text" required placeholder="Last Name" class="form">
+                <input type="text" required name="Last Name" placeholder="Last Name" class="form">
             </div>
             <div class="box">
-                <input type="text" required placeholder="Email" class="form">
+                <input type="email" required name="Email" placeholder="Email" class="form">
             </div>
             <div class="box">
-                <input type="text" placeholder="Phone (Optional)" class="form">
+                <input type="tel" name="Phone" placeholder="Phone (Optional)" class="form">
             </div>
             <div class="box">
                 <select name="" id="" placeholder="Subject">
@@ -51,7 +48,7 @@
                 </select>
             </box>
             <div class="box">
-                <textarea name="" id="" cols="30" rows="5" placeholder="Your Message"></textarea>
+                <textarea name="Message" id="" cols="30" rows="5" placeholder="Your Message"></textarea>
             </div>
             <div class="box">
                 <input type="submit" class="submit">
@@ -59,11 +56,8 @@
         </form>
     </div>
 </main>
-<section>
-    <span class="line"></span>
-</section>
-<div class="container">
-    <footer class="copyright">
+<footer class="copyright">
+    <div class="container">
         <div class="wrapper">
             <div class="left">
                 <p class="text">All images and site content &copy; Aija Ligon. All rights reserved. Unauthorized copying or <br>use of images or other content is stricly prohibited.</p>
@@ -89,7 +83,7 @@
                 </div>
             </div>
         </div>
-    </footer>
-</div>
+    </div>
+</footer>
 </body>
 </html>
