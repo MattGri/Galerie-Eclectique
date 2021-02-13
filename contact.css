@@ -55,6 +55,12 @@ table {
 
 .container .navigation{
     padding: 60px 0px 40px 0px;
+    border-bottom: 1px solid red;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000;
 }
 
 .container .navigation .wrapper{
@@ -73,23 +79,16 @@ table {
     border-top: 3px solid #ff1500;
 }
 
-.container .navigation .wrapper .donate{
+.container .navigation .wrapper .works{
     color: #ff1500;
 }
 
-.container .navigation .wrapper .donate:hover{
+.container .navigation .wrapper .works:hover{
     color: #fff;
 }
 
-section .line{
-    width: 100%;
-    background-color: #ff1500;
-    height: 2px;
-    display: block;
-}
-
 .get{
-    padding: 50px 0px 93px 0px;
+    padding: 150px 0px 105px 0px;
 }
 
 .get .container .touch .title{
@@ -156,55 +155,61 @@ section .line{
     background-color: #ff1500;
 }
 
-.container .copyright{
+.copyright{
     padding: 11px 0px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    border-top: 1px solid red;
 }
 
-.container .copyright .wrapper{
+.copyright .container .wrapper{
     display: flex;
 }
 
-.container .copyright .wrapper .left{
+.copyright .container .wrapper .left{
     width: 50%;
 }
 
-.container .copyright .wrapper .left .text{
+.copyright .container .wrapper .left .text{
     font-size: 13px;
     color: #fff;
     line-height: 25px;
     margin-bottom: 40px;
 }
 
-.container .copyright .wrapper .left .links{
+.copyright .container .wrapper .left .links{
     color: #fff;
     font-size: 13px;
     cursor: pointer;
 }
-.container .copyright .wrapper .left .first{
+
+ .copyright .container .wrapper .left .first{
     margin-right: 18px;
 }
 
-.container .copyright .wrapper .right{
+ .copyright .container .wrapper .right{
     width: 50%;
     padding-top: 10px;
 }
-
-.container .copyright .wrapper .right .wrapperBox{
+.copyright .container .wrapper .right .wrapperBox{
     display: flex;
     align-items: center;
 }
 
-.container .copyright .wrapper .right .wrapperBox  .margin{
+.copyright .container .wrapper .right .wrapperBox  .margin{
     margin: 0px 20px 0px 80px;
     cursor: pointer;
 }
 
-.container .copyright .wrapper .right .wrapperBox .marg{
+.copyright .container .wrapper .right .wrapperBox .marg{
     margin-right: 30px;
     cursor: pointer;
 }
 
-.container .copyright .wrapper .right .wrapperBox .instagram{
+.copyright .container .wrapper .right .wrapperBox .instagram{
     margin-right: 18px;
 }
 
@@ -219,11 +224,8 @@ section .line{
         padding: 0 20px;
         width: 100%;
     }
-    .container .navigation{
+    .container .navigation .wrapper{
         display: none;
-    }
-    section .line{
-        margin-top: 30px;
     }
     .get .container form .box .form{
         margin: 0 auto 30px auto;
@@ -241,34 +243,37 @@ section .line{
         margin: 0 auto;
         display: block;
     }
-    .container .copyright .wrapper{
+    .copyright .container .wrapper{
         flex-wrap: wrap;
     }
-    .container .copyright .wrapper .left{
+    .copyright .container .wrapper .left{
         width: 100%;
     }
-    .container .copyright .wrapper .text{
+    .copyright .container .wrapper .text{
         text-align: center;
     }
-    .container .copyright .wrapper .box{
+     .copyright .wrapper .box{
         text-align: center;
     }
-    .container .copyright .wrapper .right{
+    .copyright .wrapper .right{
         margin: 0 auto;
     }
-    .container .copyright .wrapper .right .wrapperBox{
-        justify-content: center;
-    }
-    .container .copyright .wrapper .right .wrapperBox .box{
+     .copyright .wrapper .right .wrapperBox .box{
         margin: 0 auto;
     }
-    .container .copyright .wrapper .right .wrapperBox .instagram{
+     .copyright .container .wrapper .right .wrapperBox .instagram{
         margin-right: 0px;
     }
-    .container .copyright .wrapper .right .wrapperBox .margin{
+     .copyright .container .wrapper .right .wrapperBox .margin{
         margin: 0px;
     }
-    .container .copyright .wrapper .right .wrapperBox .marg{
+     .copyright .container .wrapper .right .wrapperBox .marg{
         margin: 0px;
+    }
+}
+
+@media(max-width: 320px){
+    .copyright .container .wrapper .right{
+        width: 100%;
     }
 }
