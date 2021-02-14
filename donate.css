@@ -55,6 +55,12 @@ table {
 
 .container .navigation{
     padding: 60px 0px 40px 0px;
+    border-bottom: 1px solid red;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000;
 }
 
 .container .navigation .wrapper{
@@ -69,6 +75,38 @@ table {
     margin-right: 30px;
 }
 
+.container .navigation .wrapper .hide{
+    display: none;
+}
+
+.container .navigation .wrapper .show:hover > .hide{
+    display: block;
+}
+
+.container .navigation .wrapper .hide{
+    position: absolute;
+    top: 70%;
+    background-color: #000;
+}
+
+.container .navigation .wrapper .hide .first{
+    margin-top: 20px;
+}
+
+.container .navigation .wrapper .hide .hoverText{
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.container .navigation .wrapper .hide li{
+    margin-bottom: 35px;
+}
+
+.container .navigation .wrapper .hide .hoverText:hover{
+    border-top: 3px solid #ff1500;
+}
+
 .container .navigation .wrapper .text:hover{
     border-top: 3px solid #ff1500;
 }
@@ -81,18 +119,11 @@ table {
     color: #fff;
 }
 
-section .line{
-    width: 100%;
-    background-color: #ff1500;
-    height: 2px;
-    display: block;
-}
+.container .showLove{
+    padding: 155px 0px 10px 0px;
+} 
 
-.container .show{
-    padding-top: 55px;
-}
-
-.container .show .title{
+.container .showLove .title{
     color: #fff;
     text-align: center;
     text-transform: uppercase;
@@ -100,7 +131,7 @@ section .line{
     letter-spacing: 4px;
 }
 
-.container .show .line{
+.container .showLove .line{
     display: block;
     margin: 10px auto 85px auto;
     background-color: #ff1500;
@@ -108,32 +139,32 @@ section .line{
     width: 360px;
 }
 
-.container .show .text{
+.container .showLove .text{
     color: #fff;
     font-size: 25px;
 }
 
-.container .show .help{
+.container .showLove .help{
     font-style: italic;
     margin-bottom: 45px;
     font-weight: 600;
 }
 
-.container .show .click{
-margin-bottom: 50px;
-line-height: 35px;
+.container .showLove .click{
+    margin-bottom: 50px;
+    line-height: 35px;
 }
 
-.container .show .text .italic{
+.container .showLove .text .italic{
     font-style: italic;
 }
 
-.container .show .generosity{
+.container .showLove .generosity{
     text-align: center;
     margin-bottom: 50px;
 }
 
-.container .show .donate{
+.container .showLove .donate{
     display: block;
     margin: 0 auto 6px auto;
     color: #000;
@@ -144,31 +175,37 @@ line-height: 35px;
     cursor: pointer;
 }
 
-.container .show .wrapper{
+.container .showLove .wrapper{
     display: flex;
     justify-content: center;
 }
 
-.container .show .wrapper .image{
+.container .showLove .wrapper .image{
     margin: 0px 7px 124px 0px;
 }
 
-.container .show .small{
+.container .showLove .small{
     color: #fff;
     margin-bottom: 9px;
     line-height: 20px;
     font-size: 17px;
 }
 
-.container .show .small .italic{
+.container .showLove .small .italic{
     font-style: italic;
 }
 
-.container .copyright{
+.copyright{
     padding: 11px 0px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    border-top: 1px solid red;
 }
 
-.container .copyright .wrapper{
+.copyright .container .wrapper{
     display: flex;
 }
 
@@ -176,45 +213,45 @@ line-height: 35px;
     width: 50%;
 }
 
-.container .copyright .wrapper .left .text{
+.copyright .container .wrapper .left .text{
     font-size: 13px;
     color: #fff;
     line-height: 25px;
     margin-bottom: 40px;
 }
 
-.container .copyright .wrapper .left .links{
+.copyright .container .wrapper .left .links{
     color: #fff;
     font-size: 13px;
     cursor: pointer;
 }
-.container .copyright .wrapper .left .first{
+ .copyright .container .wrapper .left .first{
     margin-right: 18px;
 }
 
-.container .copyright .wrapper .right{
+ .copyright .container .wrapper .right{
     width: 50%;
     padding-top: 10px;
 }
-
-.container .copyright .wrapper .right .wrapperBox{
+.copyright .container .wrapper .right .wrapperBox{
     display: flex;
     align-items: center;
 }
 
-.container .copyright .wrapper .right .wrapperBox  .margin{
+.copyright .container .wrapper .right .wrapperBox  .margin{
     margin: 0px 20px 0px 80px;
     cursor: pointer;
 }
 
-.container .copyright .wrapper .right .wrapperBox .marg{
+.copyright .container .wrapper .right .wrapperBox .marg{
     margin-right: 30px;
     cursor: pointer;
 }
 
-.container .copyright .wrapper .right .wrapperBox .instagram{
+.copyright .container .wrapper .right .wrapperBox .instagram{
     margin-right: 18px;
 }
+
 
 @media(max-width: 1100px){
     .container{
@@ -222,74 +259,78 @@ line-height: 35px;
     }
 }
 
-
-
 @media(max-width: 900px){
     .container{
         padding: 0 20px;
         width: 100%;
     }
-    .container .navigation{
+    .container .navigation .wrapper{
         display: none;
     }
-    section .line{
-        margin-top: 30px;
-    }
-    .container .show .text{
+    .container .showLove .text{
         text-align: center;
     }
-    .container .show .small{
+    .container .showLove .small{
         text-align: center;
     }
-    .container .copyright .wrapper{
+    .copyright .container .wrapper{
         flex-wrap: wrap;
     }
-    .container .copyright .wrapper .left{
+    .copyright .container .wrapper .left{
         width: 100%;
     }
-    .container .copyright .wrapper .text{
+    .copyright .container .wrapper .text{
         text-align: center;
     }
-    .container .copyright .wrapper .box{
+     .copyright .wrapper .box{
         text-align: center;
     }
-    .container .copyright .wrapper .right{
+    .copyright .wrapper .right{
         margin: 0 auto;
     }
-    .container .copyright .wrapper .right .wrapperBox{
-        justify-content: center;
-    }
-    .container .copyright .wrapper .right .wrapperBox .box{
+     .copyright .wrapper .right .wrapperBox .box{
         margin: 0 auto;
     }
-    .container .copyright .wrapper .right .wrapperBox .instagram{
+     .copyright .container .wrapper .right .wrapperBox .instagram{
         margin-right: 0px;
     }
-    .container .copyright .wrapper .right .wrapperBox .margin{
+     .copyright .container .wrapper .right .wrapperBox .margin{
         margin: 0px;
     }
-    .container .copyright .wrapper .right .wrapperBox .marg{
+     .copyright .container .wrapper .right .wrapperBox .marg{
         margin: 0px;
     }
 }
 
 @media(max-width: 600px){
-    .container .show .text{
+    .container .showLove .text{
         font-size: 20px;
     }
-    .container .show .small{
+    .container .showLove .small{
         font-size: 13px;
     }
 }
 
+@media(max-width: 400px){
+    .container .showLove{
+        padding-bottom: 200px;
+    }
+}
+
 @media(max-width: 320px){
-    .container .show .title{
+    .container .showLove{
+        padding-bottom: 220px;
+    }
+    .container .showLove .title{
         font-size: 20px;
     }
-    .container .show .line{
+    .container .showLove .line{
         width: 100%;
     }
-    .container .show .text{
+    .container .showLove .text{
         font-size: 18px;
+    }
+    .copyright .container .wrapper .right{
+        width: 100%;
     }
 }

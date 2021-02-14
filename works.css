@@ -53,7 +53,7 @@ table {
     margin: 0 auto;
 }
 
-.navigation{
+.container .navigation{
     padding: 60px 0px 40px 0px;
     border-bottom: 1px solid red;
     width: 100%;
@@ -75,6 +75,38 @@ table {
     margin-right: 30px;
 }
 
+.container .navigation .wrapper .hide{
+    display: none;
+}
+
+.container .navigation .wrapper .show:hover > .hide{
+    display: block;
+}
+
+.container .navigation .wrapper .hide{
+    position: absolute;
+    top: 70%;
+    background-color: #000;
+}
+
+.container .navigation .wrapper .hide .first{
+    margin-top: 20px;
+}
+
+.container .navigation .wrapper .hide .hoverText{
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.container .navigation .wrapper .hide li{
+    margin-bottom: 35px;
+}
+
+.container .navigation .wrapper .hide .hoverText:hover{
+    border-top: 3px solid #ff1500;
+}
+
 .container .navigation .wrapper .text:hover{
     border-top: 3px solid #ff1500;
 }
@@ -85,13 +117,6 @@ table {
 
 .container .navigation .wrapper .works:hover{
     color: #fff;
-}
-
-section .line{
-    width: 100%;
-    background-color: #ff1500;
-    height: 2px;
-    display: block;
 }
 
 .art{
@@ -154,7 +179,7 @@ section .line{
     display: flex;
 }
 
-.container .copyright .wrapper .left{
+.copyright .container .wrapper .left{
     width: 50%;
 }
 
@@ -170,6 +195,7 @@ section .line{
     font-size: 13px;
     cursor: pointer;
 }
+
  .copyright .container .wrapper .left .first{
     margin-right: 18px;
 }
@@ -203,7 +229,6 @@ section .line{
     }
 }
 
-
 @media(max-width: 900px){
     .container{
         width: 100%;
@@ -211,9 +236,6 @@ section .line{
     }
     .container .navigation .wrapper{
         display: none;
-    }
-    section .line{
-        margin-top: 30px;
     }
     .art .container .wrapper{
         flex-wrap: wrap;
