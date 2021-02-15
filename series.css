@@ -1,0 +1,243 @@
+*{
+	box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	font-family: "Montserrat", sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+    background-color: #000;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.container .navigation{
+    padding: 60px 0px 40px 0px;
+    border-bottom: 1px solid red;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000;
+}
+
+.container .navigation .wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.container .navigation .wrapper .text{
+    font-size: 25px;
+    text-decoration: none;
+    color: #fff;
+    margin-right: 30px;
+}
+
+.container .navigation .wrapper .showList{
+    color: #ff1500;
+}
+
+.container .navigation .wrapper .showList:hover{
+    color: #fff;
+}
+
+.container .navigation .wrapper .hide{
+    display: none;
+}
+
+.container .navigation .wrapper .show:hover > .hide{
+    display: block;
+}
+
+.container .navigation .wrapper .hide{
+    position: absolute;
+    top: 70%;
+    background-color: #000;
+}
+
+.container .navigation .wrapper .hide .first{
+    margin-top: 20px;
+}
+
+.container .navigation .wrapper .hide .hoverText{
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.container .navigation .wrapper .hide .hover{
+    color: #ff1500;
+}
+
+.container .navigation .wrapper .hide .hover:hover{
+    color: #fff;
+}
+
+.container .navigation .wrapper .hide li{
+    margin-bottom: 35px;
+}
+
+.container .navigation .wrapper .hide .hoverText:hover{
+    border-top: 3px solid #ff1500;
+}
+
+.container .navigation .wrapper .text:hover{
+    border-top: 3px solid #ff1500;
+}
+
+.container .navigation .wrapper .home{
+    color: #ff1500;
+}
+
+.container .navigation .wrapper .home:hover{
+    color: #fff;
+}
+
+.art{
+    padding: 20px 0px 265px 0px;
+    margin-top: 150px;
+}
+
+.art .container .wrapper{
+    display: flex;
+    margin-bottom: 110px;
+}
+
+.art .container .wrapper .firstBox{
+    width: 70%;
+}
+
+.art .container .wrapper .secondBox{
+    width: 30%;
+}
+
+.art .container .wrapper .secondBox .title{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 32px;
+    margin: 155px 0px 140px 0px;
+}
+
+.art .container .wrapper .secondBox .blue{
+    margin-left: 30px;
+}
+
+.art .container .wrapper .secondBox .view{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 17px;
+    margin-left: 50px;
+}
+
+.art .container .wrapper .secondBox .view:hover{
+    color: #990c00;
+    transition: 0.5s;
+}
+
+.art .container .wrapper .secondBox .lineheight{
+    line-height: 38px;
+}
+
+.art .container .margin{
+    margin-bottom: 0px;
+}
+
+.copyright{
+    padding: 11px 0px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    border-top: 1px solid red;
+}
+
+.copyright .container .wrapper{
+    display: flex;
+}
+
+.container .copyright .wrapper .left{
+    width: 50%;
+}
+
+.copyright .container .wrapper .left .text{
+    font-size: 13px;
+    color: #fff;
+    line-height: 25px;
+    margin-bottom: 40px;
+}
+
+.copyright .container .wrapper .left .links{
+    color: #fff;
+    font-size: 13px;
+    cursor: pointer;
+}
+ .copyright .container .wrapper .left .first{
+    margin-right: 18px;
+}
+
+ .copyright .container .wrapper .right{
+    width: 50%;
+    padding-top: 10px;
+}
+.copyright .container .wrapper .right .wrapperBox{
+    display: flex;
+    align-items: center;
+}
+
+.copyright .container .wrapper .right .wrapperBox  .margin{
+    margin: 0px 20px 0px 80px;
+    cursor: pointer;
+}
+
+.copyright .container .wrapper .right .wrapperBox .marg{
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.copyright .container .wrapper .right .wrapperBox .instagram{
+    margin-right: 18px;
+}
