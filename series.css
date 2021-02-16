@@ -241,3 +241,78 @@ table {
 .copyright .container .wrapper .right .wrapperBox .instagram{
     margin-right: 18px;
 }
+
+@media(max-width: 1100px){
+    .container{
+        width: 900px;
+    }
+}
+
+@media(max-width: 900px){
+    .container{
+        width: 100%;
+        padding: 0 20px;
+    }
+    .container .navigation .wrapper{
+        display: none;
+    }
+    .art .container .wrapper{
+        flex-wrap: wrap;
+    }
+    .art .container .wrapper .firstBox{
+        width: 100%;
+    }
+    .art .container .wrapper .firstBox .image{
+        margin: 0 auto;
+        display: block;
+    }
+    .art .container .wrapper .secondBox{
+        width: 100%;
+        text-align: center;
+    }
+    .art .container .wrapper .secondBox .title{
+        margin: 20px 0px 30px 0px;
+    }
+    .art .container .wrapper .secondBox .view{
+        margin: 0px;
+    }
+    .copyright .container .wrapper{
+        flex-wrap: wrap;
+    }
+    .copyright .container .wrapper .left{
+        width: 100%;
+    }
+    .copyright .container .wrapper .text{
+        text-align: center;
+    }
+     .copyright .wrapper .box{
+        text-align: center;
+    }
+    .copyright .wrapper .right{
+        margin: 0 auto;
+    }
+     .copyright .wrapper .right .wrapperBox .box{
+        margin: 0 auto;
+    }
+     .copyright .container .wrapper .right .wrapperBox .instagram{
+        margin-right: 0px;
+    }
+     .copyright .container .wrapper .right .wrapperBox .margin{
+        margin: 0px;
+    }
+     .copyright .container .wrapper .right .wrapperBox .marg{
+        margin: 0px;
+    }
+}
+
+@media(max-width: 600px){
+    .art .container .wrapper .firstBox .image{
+        width: 100%;
+    }
+}
+
+@media(max-width: 320px){
+    .copyright .container .wrapper .right{
+        width: 100%;
+    }
+}
