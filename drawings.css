@@ -1,5 +1,5 @@
 *{
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -135,10 +135,10 @@ table {
     color: #fff;
 }
 
-
 .drawings{
-     padding-bottom: 50px;
+    padding-bottom: 50px;
 }
+
 .drawings .container .image{
     display: block;
     margin: 150px auto 0 auto;
