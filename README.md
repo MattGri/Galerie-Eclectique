@@ -6,6 +6,8 @@ Copy of a website written by myself
 
 * CSS
 
+* JAVASCRIPT
+
 # Issues 🔍
  
  If you have any issues, please let me know on mateusz.grzybowski98@gmail.com
