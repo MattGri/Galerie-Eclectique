@@ -63,6 +63,19 @@ table {
     background-color: #000;
 }
 
+.container .navigation .fas{
+    color: #fff;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    display: none;
+}
+
+.container .navigation .fa-times-circle{
+    cursor: pointer;
+    display: none;
+}
+
 .container .navigation .wrapper{
     display: flex;
     justify-content: center;
@@ -229,6 +242,12 @@ table {
     }
 }
 
+@media(min-width: 900px){
+    .container .navigation .fas{
+        display: none !important;
+    }
+}
+
 @media(max-width: 900px){
     .container{
         width: 100%;
@@ -236,6 +255,13 @@ table {
     }
     .container .navigation .wrapper{
         display: none;
+    }
+    /* .container .navigation .wrapper .text{
+        font-size: 15px;
+    } */
+    .container .navigation .fa-bars{
+        display: block;
+        cursor: pointer;
     }
     .art .container .wrapper{
         flex-wrap: wrap;
